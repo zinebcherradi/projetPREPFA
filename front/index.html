@@ -4,26 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Connexion</title>
- <link rel="stylesheet" href="./index.css">
+  <!-- Police moderne -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS externe -->
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
   <div class="login-container">
-    <h2>Connexion</h2>
+    <div class="lock-icon">
+      <i class="fas fa-lock"></i>
+    </div>
+    <h2>Bienvenue</h2>
+    <p class="subtitle">Connectez-vous à votre compte</p>
     <form id="loginForm">
       <div class="input-group">
-        <label for="email">Adresse e-mail</label>
-        <input type="email" id="email" name="email" required />
+        <i class="fas fa-envelope icon-left"></i>
+        <input type="email" id="email" name="email" placeholder="Adresse e-mail" required />
         <div id="emailError" class="error"></div>
       </div>
       <div class="input-group">
-        <label for="password">Mot de passe</label>
-        <input type="password" id="password" name="password" required />
+        <i class="fas fa-key icon-left"></i>
+        <input type="password" id="password" name="password" placeholder="Mot de passe" required />
         <div id="passwordError" class="error"></div>
       </div>
       <button type="submit" class="btn">Se connecter</button>
     </form>
   </div>
 
-  <script src="index.js"></script>
+ <script src="./index.js"></script>
 </body>
 </html>

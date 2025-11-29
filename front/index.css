@@ -77,10 +77,24 @@ h2 {
 .icon-left {
   position: absolute;
   left: 1rem;
-  top: 35%;
+  top: 36%;
   transform: translateY(-50%);
   color: #8a9bb5;
   pointer-events: none;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8a9bb5;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.toggle-password:hover {
+  color: #4a7bff;
 }
 
 .btn {
@@ -112,4 +126,19 @@ h2 {
   text-align: left;
   margin-top: 0.3rem;
   min-height: 1.2rem;
+}
+
+/* Lien "Mot de passe oublié ?" */
+.forgot-password {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+.forgot-password a {
+  color: #4a7bff;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
 }
